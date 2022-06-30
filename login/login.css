@@ -1,0 +1,253 @@
+html { 
+    background-image: url('https://geekblog.com.br/wp-content/uploads/2020/07/1_09PYj2KQ8fDLHlV0BPE7_A-scaled.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+     overflow: hidden;
+   }
+   
+   img{
+     display: block;
+     margin: auto;
+     width: 100%;
+     height: auto;
+   }
+   
+   .login-button{
+     cursor: pointer;
+     padding: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background: rgba(3,3,3,.8);
+     overflow: hidden;
+     opacity: 0.4;
+     box-shadow: 10px 10px 30px #000;
+   }
+   
+   #container{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     justify-content: center;
+   }
+   
+   .dflexc {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       min-width: 500px;
+   }
+   
+   .close-btn{
+       position: absolute;
+       cursor: pointer;
+       font-family: 'Open Sans', sans-serif;
+       line-height: 18px;
+       top: -10px;
+       right: -10px;
+       width: 25px;
+       height: 25px;
+       text-align: center;
+       border-radius: 10px;
+       opacity: .4;
+       -webkit-transition: all 2s ease-in-out;
+       -moz-transition: all 2s ease-in-out;
+       -o-transition: all 2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+   }
+   
+   .close-btn:hover{
+     opacity: .5;
+   }
+   
+   /* Heading */
+   h1, h3{
+       font-family: 'Open Sans', sans-serif;
+       position: relative;
+       margin-top: 0px;
+       text-align: center;
+       font-size: 40px;
+       color: #fff;
+       text-shadow: 3px 3px 10px #000;
+       font-weight: 400;
+       margin-bottom: 15px;
+   }
+   
+   h3{
+       font-size: 30px;
+       margin-top: 10px;
+   }
+   
+   /* Inputs */
+   input{
+   font-family: 'Open Sans', sans-serif;
+       text-decoration: none;
+       position: relative;
+       width: 100%;
+       display: block;
+       margin: 0 auto;
+       font-size: 17px;
+       color: #ffffff;
+       padding: 6px;
+       border-radius: 0px;
+       border: none;
+       background: rgb(255 255 255 / 72%);
+       -webkit-transition: all 2s ease-in-out;
+       -moz-transition: all 2s ease-in-out;
+       -o-transition: all 2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+   }
+   
+   input:focus{
+     outline: none;
+     box-shadow: 0px 3px 10px -5px #333;
+     background: rgba(3,3,3,.18);
+   }
+   
+   input::placeholder {
+     color: black;
+     opacity: 1; /* Firefox */
+   }
+   
+   
+   
+   /* Placeholders */
+   ::-webkit-input-placeholder {
+      color: black;  }
+   :-moz-placeholder { /* Firefox 18- */
+      color: black;  }
+   ::-moz-placeholder {
+     position: relative;
+     /* margin: -5px 20px; */
+      color: #333;  }
+   input:focus::placeholder {
+     color: white;
+     opacity: 1; /* Firefox */
+   }
+   /* Link */
+   
+   a:hover{
+     opacity: 0.7;
+   }
+   
+   #remember-container{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+   }
+   
+   .checkbox {
+     cursor: pointer;
+     -webkit-appearance: none;
+     padding: 5px;
+     border-radius: 4px;
+     background: rgba(3,3,3,.2);
+     width: 16px;
+     height: 15px;
+   }
+   
+   .checkbox:checked:active {
+       box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+   }
+   
+   .checkbox:checked {
+     background: rgba(3,3,3,.4);
+       box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.5);
+       color: #fff;
+   }
+   
+   .checkbox:checked:after {
+       content: '\2714';
+       font-size: 10px;
+       position: absolute;
+       top: 0px;
+       left: 4px;
+       color: #fff;
+   }
+   
+   #remember{
+     font-size: 13px;
+     font-family: 'Hind', sans-serif;
+     color: rgba(255,255,255,.5);
+     top: 7px;
+     width: 100%;
+   }
+   
+   #forgotten{
+     font-size: 16px;
+     font-family: 'Hind', sans-serif;
+     color: rgb(255 255 255);
+     top: 8px;
+     margin-top: 18px;
+     cursor: pointer;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     -o-transition: all 2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+   }
+   
+   #forgotten:hover{
+     color: rgba(255,255,255,.6);
+   }
+   
+   #forgotten-container{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     width: 300px;
+     height: 200px;
+     border-radius: 10px;
+     background: rgba(3,3,3,0.25);
+     box-shadow: 1px 1px 50px #000;
+     display: none;
+   }
+   
+   .orange-btn{
+       background: rgba(87,198,255,.5);
+       padding: 7px;
+       margin-top: 20px;
+       border-radius: 4px;
+       text-decoration: none;
+       color: white;
+       font-family: 'Open Sans', sans-serif;
+   }
+   
+   .plogin {
+       display: flex;
+       width: 300px;
+       border: 2px solid #b9b9b9;
+   }
+   
+   .dflexf {   
+       display: flex; 
+       align-items: center;
+       flex-direction: column;
+   }
+   
+   input.forgetemail {
+       width: 80%;
+   }
+   
+   .lbtn {
+       font-family: 'Open Sans Condensed', sans-serif;
+       text-align: center;
+       padding: 4px 15px;
+       background: rgb(255 255 255 / 35%);
+       color: #ffffff;
+       font-weight: bold;
+     display: flex;
+       align-items: center;
+       text-decoration: none;
+   }

@@ -1,0 +1,923 @@
+
+  * {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navigation-mobile {
+    position: absolute;
+    display: none;
+    text-decoration: none;
+    top: 100px;
+    left: 10%;
+    width: 80vw;
+    min-height: 40vh;
+    background: aliceblue;
+    z-index: 180;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+.wewe{
+  display: block;
+  width: -webkit-fill-available;
+
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0 auto;
+  
+  width: auto;
+}
+ol {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+svg {
+  fill: #1cc4da;
+  align-self: center;
+  margin-bottom: 10px;
+}
+p {
+  letter-spacing: 1px;
+}
+.navigation-mobile {
+  position: absolute;
+  display: none;
+  text-decoration: none;
+  top: 100px;
+  left: 10%;
+  width: 80vw;
+  min-height: 40vh;
+  background: aliceblue;
+    z-index: 180;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.state-active {
+  display: flex;
+  padding: 15px 0px;
+  flex-direction: column;
+  z-index: 190;
+}
+.navigation-mobile a {
+  position: relative;
+  text-decoration: none;
+  color: #1cc4da;
+  text-transform: uppercase;
+  align-self: center;
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.navigation-mobile a::after {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  content: "";
+  height: 3px;
+  z-index: 170;
+  position: absolute;
+  background: white;
+  width: 80vw;
+  margin: auto;
+}
+.navigation-mobile a:last-of-type::after {
+  display: none;
+}
+.icon-navigator {
+  display: none;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+  #navigation-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 20px;
+    padding: 23px 42px;
+    margin: 0 auto;
+    list-style: none;
+      
+  }
+  .navigation-desktop img {
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .links a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1em;
+    font-weight: regular;
+    color: #4f4f4f;
+    cursor: pointer;
+  }
+  #navigation-desktop a:last-of-type {
+    margin-right: 0;
+  }
+
+
+
+
+  .state-active {
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: column;
+    z-index: 190;
+  }
+  .navigation-mobile a {
+    position: relative;
+    text-decoration: none;
+    color: #1cc4da;
+    text-transform: uppercase;
+    align-self: center;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+
+
+
+
+  body {
+    height: 90vh;
+   padding: 20px;
+    display: inherit;
+
+    background: aliceblue;
+  }
+  aside.context {
+    text-align: center;
+    color: #333;
+    line-height: 1.7;
+  }
+  aside.context a {
+    text-decoration: none;
+    color: #333;
+    padding: 3px 0;
+    border-bottom: 1px dashed;
+  }
+  aside.context a:hover {
+    border-bottom: 1px solid;
+  }
+  aside.context .explanation {
+    max-width: 700px;
+    margin: 8em auto 0;
+  }
+  footer {
+    text-align: center;
+    margin: 4em auto;
+    width: 100%;
+  }
+  footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed #333;
+    color: #333;
+    margin: 5px;
+  }
+  footer a:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  footer a .icons {
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .main-content {
+    margin: 6em auto;
+    display: grid;
+    width: 750px;
+    grid: 100px 80px 160px 100px 120px / 80px 80px repeat(2, 1fr) 75px 75px 2fr;
+    border: 4px solid #096b72;
+    border-width: 4px 0 0 4px;
+    position: relative;
+  }
+  .main-content > div {
+    position: relative;
+  }
+  .main-content > .door-hor {
+    top: -4px;
+    left: 15px;
+  }
+  .utility {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    border: 4px solid #096b72;
+    border-width: 0 4px 4px 0;
+  }
+  .utility .door-hor {
+    bottom: -34px;
+    left: 18px;
+  }
+  .kitchen {
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 2;
+  }
+  .kitchen .island {
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    border: 2px solid #096b72;
+    top: 100px;
+    left: 50px;
+  }
+  .kitchen .island:before, .kitchen .island:after, .kitchen .island .chair {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: -35px;
+    border-radius: 50%;
+    border: 2px solid #096b72;
+    left: 5px;
+    background: #ffc107;
+  }
+  .kitchen .island:after {
+    left: 38px;
+  }
+  .kitchen .island .chair {
+    left: 70px;
+  }
+  .kitchen .rug {
+    width: 40px;
+    height: 40px;
+    top: 50px;
+    right: 45px;
+  }
+  .kitchen .ref {
+    position: absolute;
+    border: 2px solid #096b72;
+    top: -2px;
+    width: 45px;
+    height: 40px;
+    left: 8px;
+  }
+  .kitchen .cabinets {
+    position: absolute;
+    border: 2px solid #096b72;
+    top: -2px;
+    width: 120px;
+    height: 40px;
+    right: 37px;
+  }
+  .kitchen .cabinets .stove {
+    position: absolute;
+    width: 54px;
+    height: 32px;
+    border: 2px solid #096b72;
+    right: 2px;
+    top: 2px;
+  }
+  .kitchen .cabinets .stove:before, .kitchen .cabinets .stove:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    border-radius: 50%;
+    border: 2px solid #096b72;
+    left: 5px;
+  }
+  .kitchen .cabinets .stove:after {
+    right: 5px;
+    left: auto;
+  }
+  .kitchen .sink {
+    position: absolute;
+    right: -1px;
+    border: 2px solid #096b72;
+    top: -2px;
+    width: 35px;
+    height: 98px;
+  }
+  .kitchen .sink .sink-tap-1, .kitchen .sink .sink-tap-2 {
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    border: 2px solid #096b72;
+    right: 8px;
+    bottom: 27px;
+    border-radius: 4px;
+  }
+  .kitchen .sink .sink-tap-2 {
+    bottom: 10px;
+    height: 10px;
+  }
+  .kitchen .sink .sink-tap-2:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #096b72;
+    right: -8px;
+    top: -6px;
+  }
+  .bathroom-2 {
+    grid-column: 5 / span 2;
+    border: 4px solid #096b72;
+    border-width: 0 0 4px 4px;
+  }
+  .bathroom-2 .rug {
+    width: 45px;
+    height: 25px;
+    top: 45%;
+    left: 25px;
+    transform: rotate(-40deg);
+    z-index: 20;
+  }
+  .bathroom-2 .door-hor {
+    bottom: -4px;
+    left: 40px;
+    transform: rotate(180deg);
+  }
+  .bathroom-2 .window-hor {
+    left: 30px;
+  }
+  .bathroom-2 .toilet {
+    left: auto;
+    right: 8px;
+  }
+  .bathroom-2 .vanity {
+    bottom: auto;
+    top: -2px;
+    width: 50px;
+  }
+  .bedroom-2 {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 2;
+    border: 4px solid #096b72;
+    border-width: 0 4px 4px;
+  }
+  .bedroom-2 .door-ver {
+    left: -4px;
+    bottom: 10px;
+    transform: scaleY(-1);
+  }
+  .bedroom-2 .window-hor {
+    left: 45px;
+    width: 120px;
+  }
+  .living-room {
+    grid-column: 5 / span 3;
+    grid-row: 3 / span 1;
+    border: 4px solid #096b72;
+    border-width: 0 4px 0 0;
+  }
+  .bedroom-1 {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 2;
+    border: 4px solid #096b72;
+    border-width: 4px 4px 4px 0;
+  }
+  .bedroom-1 .rug {
+    left: 20%;
+    top: 20%;
+    height: 150px;
+  }
+  .bedroom-1 .door-hor {
+    top: -4px;
+    left: 40px;
+  }
+  .bedroom-1 .window-hor {
+    left: 30px;
+    top: auto;
+    bottom: -6px;
+    width: 200px;
+  }
+  .bedroom-1 .bed {
+    height: 100px;
+    width: 170px;
+    transform: scaleX(-1);
+    left: -2px;
+    top: 70px;
+  }
+  .bedroom-1 .bed .pillow {
+    height: 35px;
+    top: 8px;
+    right: 15px;
+  }
+  .bedroom-1 .bed .pillow:nth-child(3) {
+    bottom: 8px;
+    top: auto;
+  }
+  .bedroom-1 .bed-table {
+    width: 25px;
+    height: 25px;
+    top: 37px;
+    right: auto;
+    left: -2px;
+  }
+  .bedroom-1 .bed-table:nth-child(5) {
+    top: auto;
+    bottom: 5px;
+    width: 25px;
+    height: 25px;
+  }
+  .closet {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1;
+    z-index: 3;
+    border-left: 4px solid #096b72;
+  }
+  .closet .wall-gap {
+    left: -4px;
+    top: 30px;
+  }
+  .bathroom-1 {
+    grid-column: 4 / span 2;
+    grid-row: 5 / span 1;
+    z-index: 2;
+    border: 4px solid #096b72;
+    background: #fff;
+  }
+  .bathroom-1 .door-ver:nth-child(1) {
+    left: -4px;
+    bottom: 10px;
+    transform: scaleY(-1);
+  }
+  .bathroom-1 .door-ver:nth-child(2) {
+    right: -4px;
+    bottom: 40px;
+    transform: scaleX(-1);
+  }
+  .bathroom-1 .window-hor {
+    top: auto;
+    bottom: -6px;
+    right: 30px;
+  }
+  .bathroom-1 .rug {
+    width: 50px;
+    height: 20px;
+    top: 55px;
+    left: 100px;
+    z-index: 20;
+  }
+  .office {
+    grid-row: 4 / span 2;
+    grid-column: 5 / span 3;
+    border: 4px solid #096b72;
+    border-width: 4px 0;
+  }
+  .office .door-hor {
+    top: -4px;
+    left: 45px;
+  }
+  .office .window-hor {
+    top: auto;
+    bottom: -6px;
+    left: 82px;
+    width: 54px;
+  }
+  .office .table {
+    width: 160px;
+    height: 25px;
+    transform: scaleY(-1);
+    top: -4px;
+    right: 65px;
+  }
+  .patio {
+    grid-row: 4 / span 2;
+    grid-column: 7 / span 1;
+    margin-top: 4px;
+    position: relative;
+  }
+  .patio:before {
+    content: "";
+    width: 140%;
+    height: 4px;
+    background: #096b72;
+    bottom: 50%;
+    left: -21%;
+    transform: rotate(-44deg);
+    position: absolute;
+  }
+  .patio:after {
+    content: "";
+    width: 140%;
+    height: 140px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 215px solid #fff;
+    border-left: 223px solid transparent;
+  }
+  .patio .real-patio {
+    width: 139%;
+    height: 80px;
+    position: absolute;
+    z-index: 20;
+    transform: rotate(-44deg);
+    bottom: 39px;
+    margin-left: -20px;
+    border: 2px solid #096b72;
+    border-width: 0 2px 2px 2px;
+  }
+  /*utilities*/
+  .wall-gap {
+    position: absolute;
+    background: #fff;
+    width: 4px;
+    height: 40px;
+  }
+  .door-hor {
+    position: absolute;
+    background: #fff;
+    width: 45px;
+    height: 35px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .door-hor:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 2px;
+    height: 31px;
+    border: 1px solid #096b72;
+  }
+  .door-hor:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: 80px;
+    width: 130px;
+    right: -1px;
+    bottom: -0.5px;
+    border-radius: 50%;
+    border: 1px solid #096b72;
+  }
+  .door-ver {
+    position: absolute;
+    background: #fff;
+    height: 45px;
+    width: 35px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .door-ver:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 31px;
+    border: 1px solid #096b72;
+  }
+  .door-ver:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    width: 80px;
+    height: 130px;
+    right: -1px;
+    bottom: 0.5px;
+    border-radius: 50%;
+    border: 1px solid #096b72;
+  }
+  .door-sliding {
+    position: absolute;
+    background: linear-gradient(to right, #096b72 0, #096b72 8%, #fff 8%, #fff 92%, #096b72 92%);
+    width: 200px;
+    height: 6px;
+    transform: rotate(-44deg);
+    bottom: 50%;
+    margin-bottom: -9px;
+    z-index: 15;
+  }
+  .door-sliding:before, .door-sliding:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    border: 1px solid #096b72;
+  }
+  .door-sliding:before {
+    top: -1px;
+  }
+  .door-sliding:after {
+    right: 0;
+    bottom: 0;
+  }
+  .window-hor {
+    position: absolute;
+    top: -6px;
+    height: 6px;
+    border: 2px solid #096b72;
+    width: 80px;
+    background: #e2f0f1;
+    z-index: 10;
+  }
+  .window-ver {
+    position: absolute;
+    right: -6px;
+    top: 8px;
+    height: 140px;
+    border: 2px solid #096b72;
+    width: 6px;
+    background: #e2f0f1;
+  }
+  .vanity {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    border: 2px solid #096b72;
+    bottom: -2px;
+    right: -2px;
+  }
+  .vanity:before {
+    content: "";
+    position: absolute;
+    border: 1px solid #096b72;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #096b72;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 5px;
+    left: 50%;
+    margin-left: -7.5px;
+  }
+  .toilet {
+    width: 30px;
+    height: 8px;
+    position: absolute;
+    border: 2px solid #096b72;
+    bottom: -2px;
+    left: 40px;
+  }
+  .toilet:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #096b72;
+    height: 22px;
+    width: 20px;
+    border-radius: 20px 20px 0 0;
+    top: -26px;
+    left: 50%;
+    margin-left: -12px;
+  }
+  .bathtub {
+    width: 110px;
+    height: 48px;
+    position: absolute;
+    border: 2px solid #096b72;
+    top: -2px;
+    left: -2px;
+  }
+  .bathtub:before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid #096b72;
+    top: 10px;
+    left: 10px;
+  }
+  .shower {
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid #096b72;
+    top: -2px;
+    left: -2px;
+    border-radius: 0 0% 2000% 0;
+  }
+  .shower:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #096b72;
+    left: 6px;
+    top: 6px;
+  }
+  .bed {
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    border: 2px solid #096b72;
+    right: -2px;
+    top: 35px;
+    border-radius: 8px 0 0 8px;
+    background: #fff;
+  }
+  .bed .blanket {
+    width: 55%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-right: 2px solid #096b72;
+    background: repeating-linear-gradient(to right, transparent, transparent 6px, rgba(9, 107, 114, 0.5) 6px, rgba(9, 107, 114, 0.5) 8px), repeating-linear-gradient(to bottom, transparent, transparent 6px, rgba(9, 107, 114, 0.5) 6px, rgba(9, 107, 114, 0.5) 8px);
+  }
+  .bed .blanket:before {
+    content: "";
+    position: absolute;
+    right: -18px;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid #096b72;
+  }
+  .bed .pillow {
+    width: 25px;
+    border: 2px solid #096b72;
+    height: 40px;
+    border-radius: 6px;
+    right: 8px;
+    top: 14px;
+    position: absolute;
+    background: #ffc107;
+  }
+  .bed-table {
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    right: -2px;
+    position: absolute;
+    border: 2px solid #096b72;
+  }
+  .table {
+    width: 90px;
+    height: 15px;
+    bottom: -2px;
+    right: 20px;
+    position: absolute;
+    border: 2px solid #096b72;
+  }
+  .table:before {
+    content: "";
+    position: absolute;
+    border: 2px solid #096b72;
+    width: 20px;
+    height: 16px;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-radius: 40px 40px 0 0;
+    background: linear-gradient(to bottom, transparent 0, transparent 50%, #096b72 50%, #096b72 60%, transparent 60%);
+  }
+  .sofa {
+    width: 130px;
+    height: 40px;
+    bottom: -2px;
+    right: 20px;
+    position: absolute;
+    border: 2px solid #096b72;
+    border-radius: 8px 8px 0 0;
+    background: #ffc107;
+  }
+  .sofa:before {
+    content: "";
+    position: absolute;
+    border: 2px solid #096b72;
+    border-width: 0 2px 2px;
+    width: 80%;
+    height: 70%;
+    left: 8%;
+    border-radius: 0 0 4px 4px;
+    background: #fff;
+  }
+  .sofa:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #096b72;
+    width: 30px;
+    height: 30px;
+    transform: rotate(60deg);
+    left: -50px;
+    bottom: 50px;
+    border-radius: 6px;
+    background: #ffc107;
+  }
+  .coffee-table, .patio-table {
+    width: 40px;
+    height: 40px;
+    bottom: 60px;
+    right: 80px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #096b72;
+    background: #fff;
+  }
+  .patio-table {
+    width: 30px;
+    height: 30px;
+    bottom: 35px;
+    z-index: 25;
+  }
+  .patio-chair {
+    width: 34px;
+    height: 26px;
+    bottom: 30px;
+    left: 65px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    border: 2px solid #096b72;
+    background: #ffc107;
+    z-index: 25;
+    transform: rotate(-95deg);
+  }
+  .patio-chair:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 82%;
+    border-radius: inherit;
+    background: #fff;
+    bottom: 0;
+    left: 10%;
+    border: 1px solid #096b72;
+    border-width: 1px 1px 0;
+  }
+  .patio-chair:nth-child(5) {
+    transform: rotate(15deg);
+    bottom: 75px;
+    left: 115px;
+  }
+  .tv-set {
+    width: 140px;
+    height: 20px;
+    top: -2px;
+    right: 35px;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    border: 2px solid #096b72;
+  }
+  .rug {
+    width: 150px;
+    height: 110px;
+    top: 25px;
+    right: 35px;
+    position: absolute;
+    background: rgba(255, 193, 7, 0.25);
+  }
+  .name {
+    font: 600 14px/1 "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #096b72;
+    position: absolute;
+    text-align: center;
+    z-index: 30;
+  }
+  .utility .name {
+    width: 200%;
+    transform: rotate(-90deg);
+    bottom: 45%;
+    left: -38px;
+  }
+  .kitchen .name {
+    top: 20%;
+    left: 30%;
+  }
+  .bathroom-2 .name {
+    top: 45px;
+    left: 40px;
+  }
+  .bedroom-2 .name {
+    width: 100px;
+    bottom: 25px;
+    left: 25px;
+  }
+  .living-room .name {
+    top: 38px;
+    left: 30%;
+  }
+  .bedroom-1 .name {
+    width: 100px;
+    top: 25px;
+    left: 130px;
+  }
+  .closet .name {
+    top: 35px;
+  }
+  .bathroom-1 .name {
+    bottom: 40px;
+    right: 50px;
+  }
+  .office .name {
+    width: 80px;
+    top: 45%;
+    left: 30%;
+  }
+  .patio .name {
+    right: 20px;
+    top: 40%;
+  }
+  

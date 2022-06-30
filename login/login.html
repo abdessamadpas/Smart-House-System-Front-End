@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div id="container">
+  
+        <form class="dflexc" action="loginDB.php" method="POST">
+          <div class="login-button">
+            <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+            </img>
+          </div>
+          <h1>hello chaymae</h1>    
+          <div class="plogin">
+          <input type="password" name="password" placeholder="Password">
+          <!-- <a class="lbtn" name="save" value="submit" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
+          <input type="submit" name="save"  value="login" class="lbtn fa fa-arrow-right"/>
+          </div>	
+          <div id="remember-container">
+            <!-- <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+            <span id="remember">Remember me</span> -->
+            <span id="forgotten">Forgotten password</span>
+          </div>
+      </form>
+      </div>
+      
+      <!-- Forgotten Password Container -->
+      <div id="forgotten-container">
+         <h3>Forgotten</h3>
+        <span class="close-btn">
+          <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+        </span>
+      
+        <form class="dflexf">
+          <input class="forgetemail" type="email" name="email" placeholder="E-mail">
+          <a href="#" class="orange-btn">Get new password</a>
+      </form>
+      </div>
+      <script src="login.js"></script>
+
+</body>
+</html>
